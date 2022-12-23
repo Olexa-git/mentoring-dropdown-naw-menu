@@ -1,0 +1,163 @@
+@font-face {
+	font-family: Epilogue;
+	src: url("../fonts/Epilogue.ttf") format("truetype")
+}
+* {
+	box-sizing: border-box;
+	color: hsl(0, 0%, 41%);
+	font-family: Epilogue;
+	font-size: 15px;
+	font-weight: 700;
+}
+.invisible {
+	display: none;
+}
+.container {
+	width: 1400px;
+	margin: 20px auto;
+	background-color: hsl(0, 0%, 98%);
+}
+/*Navigation section*/
+.navigation {
+	display: flex;
+	height: 40px;
+	position: relative;
+}
+.nav_logo {
+	position: absolute;
+	height: 26px;
+	top: 8px;
+	left: 40px;
+}
+.nav_menu {
+	position: absolute;
+	left: 180px;
+	top: 9px;
+	margin: 0;
+	padding: 0;
+	width: 400px;
+	display: flex;
+	justify-content: space-between;
+}
+.nav_menu_item {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 70px;
+	list-style: none;
+}
+.features_menu {
+	position: absolute;
+	padding: 5px 0 0 10px;
+	width: 140px;
+	top: 30px;
+	height: 145px;
+	left: -60px;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0px 0px 4px 3px hsl(0, 0%, 93%);
+}
+.features_menu li {
+	list-style: none;
+	padding-left: 10px;
+	margin: 12px auto;
+	font-size: 14px;
+}
+.features_menu img {
+	margin-right: 10px;
+}
+
+.nav_menu_item:hover,
+.nav_login:hover,
+.nav_register:hover {
+	color: hsl(0, 0%, 8%);
+	border-color: hsl(0, 0%, 8%);
+	cursor: pointer;
+}
+
+.nav_menu_feature_img {
+	position: absolute;
+	left: 71px;
+	top: 5px;
+}
+.nav_menu_company_img {
+	position: absolute;
+	left: 75px;
+	top: 5px;
+}
+.nav_login {
+	position: absolute;
+	top: 9px;
+	left: 1180px;
+}
+.nav_register {
+	position: absolute;
+	width: 130px;
+	height: 50px;
+	top: -8px;
+	left: 1270px;
+	border-radius: 20px;
+	border-style: solid;
+	border-color: hsl(0, 0%, 41%);
+	text-align: center;
+	padding-top: 15px;
+	border-width: 3px;
+}
+
+
+
+/*Main content*/
+article {
+	width: 1150px;
+	margin: 45px 0 0 160px;
+	display: inline-flex;
+	justify-content: space-between;
+}
+.main_content {
+	width: 550px;
+}
+.image_hero_desktop {
+	width: 460px;
+}
+.main_content h1 {
+	margin: 110px 0 35px 0;
+	font-size: 80px;
+	font-weight: 800;
+	color: hsl(0, 0%, 8%);
+}
+.main_content h2 {
+	width: 460px;
+	line-height: 1.6em;
+	letter-spacing: 1.7px;
+	margin-bottom: 55px;
+}
+.main_content button {
+	width: 160px;
+	height: 50px;
+	border-radius: 10px;
+	font-weight: 800;
+	color: hsl(0, 0%, 98%);
+	background-color: hsl(0, 0%, 8%);
+}
+.main_content button:hover {
+	color: hsl(0, 0%, 8%);
+	background-color: hsl(0, 0%, 98%);
+	cursor: pointer;
+}
+.company_icons {
+	display: flex;
+	justify-content: space-between;
+	width: 500px;
+	padding: 0;
+	margin: 105px 0 0 0;
+}
+.company_icons li {
+	list-style: none;
+}
+.audiophile_icon {
+	margin-top: -10px;
+}
+.attribution {
+	height: 20px;
+	margin: 50px 0 0 160px;
+}
