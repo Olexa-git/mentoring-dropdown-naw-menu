@@ -12,11 +12,14 @@
   <div class="container">
     <nav class="navigation">
       <img src="images/logo.svg" class="nav_logo">
-      <ul class="nav_menu">
+      <img src="images/icon-menu.svg" class="burger_menu_open" id="burger_menu_open">
+      <img src="images/icon-close-menu.svg" class="burger_menu_close" id="burger_menu_close">
+      <div class="burger_grey_shaddow" id="burger_grey_shaddow"></div>
+      <ul class="nav_menu" id="nav_menu">
         <li class="nav_menu_item" id="nav_menu_features">Features
           <img class="nav_menu_feature_img" id="feature_arrow_down" src="images/icon-arrow-down.svg">
           <img class="nav_menu_feature_img invisible" id="feature_arrow_up" src="images/icon-arrow-up.svg">
-          <ul class="features_menu">
+          <ul class="features_menu invisible" id="features_menu">
             <li><img src="images/icon-todo.svg">Todo list</li>
             <li><img src="images/icon-calendar.svg">Calendar</li>
             <li><img src="images/icon-reminders.svg">Reminders</li>
@@ -26,26 +29,35 @@
         <li class="nav_menu_item" id="nav_menu_company">Company
           <img class="nav_menu_company_img" id="company_arrow_down" src="images/icon-arrow-down.svg">
           <img class="nav_menu_company_img invisible" id="company_arrow_up" src="images/icon-arrow-up.svg">
+          <ul class="company_menu invisible" id="company_menu">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
         </li>
         <li class="nav_menu_item">Careers</li>
         <li class="nav_menu_item">About</li>
+        <li class="nav_menu_item">
+          <div class="nav_login">Login</div>
+          <div class="nav_register">Register</div>
+        </li>
       </ul>
-      <div class="nav_login">Login</div>
-      <div class="nav_register">Register</div>
     </nav>
     <article>
       <div class="main_content">
-        <h1>Make<br>remote work</h1>
+        <h1 class="desktop_header">Make<br>remote work</h1>
+        <h1 class="mobile_header">Make remote work</h1>
         <h2>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</h2>
         <button>Learn more</button>
         <ul class="company_icons">
-          <li><img src="images/client-databiz.svg"></li>
-          <li class="audiophile_icon"><img src="images/client-audiophile.svg"></li>
-          <li><img src="images/client-meet.svg"></li>
-          <li><img src="images/client-maker.svg"></li>
+          <li><img class="other_company_icons" src="images/client-databiz.svg"></li>
+          <li><img class="audiophile_icon" src="images/client-audiophile.svg"></li>
+          <li><img class="other_company_icons" src="images/client-meet.svg"></li>
+          <li><img class="other_company_icons" src="images/client-maker.svg"></li>
         </ul>
       </div>
       <img class="image_hero_desktop" src="images/image-hero-desktop.png">
+      <img class="image_hero_mob" src="images/image-hero-mobile.png">
     </article>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
