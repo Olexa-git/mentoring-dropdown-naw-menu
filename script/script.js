@@ -31,11 +31,19 @@ burger_menu_open.addEventListener('click', () => {
 	};
 	
 })
-
 burger_menu_close.addEventListener('click', () => {
 	if (burger_menu_close.style.display === "flex") {
 		burger_menu_close.style.display = "none";
 		nav_menu.style.display = "none";
 		burger_grey_shaddow.style.display = "none";
+	};
+})
+window.addEventListener('resize', () => {
+	if (window.screen.width > 400) {
+		burger_menu_close.style.display = "none";
+		nav_menu.style.display = "flex";
+		burger_grey_shaddow.style.display = "none";
+	} else if (burger_menu_close.style.display === "none") {
+		nav_menu.style.display = "none";
 	};
 })
